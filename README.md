@@ -1,5 +1,5 @@
 # mavi
-A mostly blue and grey vim color scheme
+A mostly blue, grey, and yellow vim color scheme.
 
 # Screenshots
 
