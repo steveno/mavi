@@ -38,6 +38,8 @@ if &t_Co==256
     hi WildMenu     ctermfg=16      ctermbg=186     cterm=none
     hi VertSplit    ctermfg=16      ctermbg=252     cterm=none
     hi MatchParen   ctermfg=252     ctermbg=16      cterm=none
+    hi SpellRare    ctermfg=252     ctermbg=88      cterm=none
+    hi SpellBad     ctermfg=252     ctermbg=88      cterm=none
 else
     hi Normal       ctermfg=#d0d0d0    ctermbg=#1c1c1c    cterm=none
     hi String       ctermfg=#af87af    ctermbg=none       cterm=none
@@ -53,4 +55,6 @@ else
     hi WildMenu     ctermfg=#000000    ctermbg=#d7d787    cterm=none
     hi VertSplit    ctermfg=#000000    ctermbg=#d0d0d0    cterm=none
     hi MatchParen   ctermfg=#d0d0d0    ctermbg=#000000    cterm=none
+    hi SpellRare    ctermfg=#d0d0d0    ctermbg=#870000    cterm=none
+    hi SpellBad     ctermfg=#d0d0d0    ctermbg=#870000    cterm=none
 endif
