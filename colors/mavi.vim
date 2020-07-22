@@ -12,49 +12,58 @@ endif
 
 let g:colors_name = expand("mavi")
 
-" Color Scheme Quick Reference
-" 16  #000000 Grey0
-" 88  #870000 DarkRed
-" 139 #af87af Grey63
-" 153 #afd7ff LightSkyBlue1
-" 186 #d7d787 LightGoldenRod2
-" 209 #ff875f Salmon1
-" 230 #ffffd7 Cornsilk1
-" 234 #1c1c1c Grey11
-" 252 #d0d0d0 Grey82
+let s:t_grey0           = "16"
+let s:t_darkred         = "88"
+let s:t_grey63          = "139"
+let s:t_lightskyblue1   = "153"
+let s:t_lightgoldenrod2 = "186"
+let s:t_salmon1         = "209"
+let s:t_cornsilk1       = "230"
+let s:t_grey11          = "234"
+let s:t_grey82          = "252"
+
+let s:grey0           = "#000000"
+let s:darkred         = "#870000"
+let s:grey63          = "#af87af"
+let s:lightskyblue1   = "#afd7ff"
+let s:lightgoldenrod2 = "#d7d787"
+let s:salmon1         = "#ff875f"
+let s:cornsilk1       = "#ffffd7"
+let s:grey11          = "#1c1c1c"
+let s:grey82          = "#d0d0d0"
 
 if &t_Co==256
-    hi Normal       ctermfg=252     ctermbg=234     cterm=none
-    hi String       ctermfg=139     ctermbg=none    cterm=none
-    hi Comment      ctermfg=153     ctermbg=none    cterm=none
-    hi Number       ctermfg=252     ctermbg=none    cterm=none
-    hi Identifier   ctermfg=252     ctermbg=none    cterm=none
-    hi Statement    ctermfg=230     ctermbg=none    cterm=none
-    hi PreProc      ctermfg=252     ctermbg=none    cterm=none
-    hi Type         ctermfg=252     ctermbg=none    cterm=none
-    hi Error        ctermfg=209     ctermbg=none    cterm=none
-    hi Todo         ctermfg=88      ctermbg=153     cterm=none
-    hi LineNr       ctermfg=252     ctermbg=none    cterm=none
-    hi WildMenu     ctermfg=16      ctermbg=186     cterm=none
-    hi VertSplit    ctermfg=16      ctermbg=252     cterm=none
-    hi MatchParen   ctermfg=252     ctermbg=16      cterm=none
-    hi SpellRare    ctermfg=252     ctermbg=88      cterm=none
-    hi SpellBad     ctermfg=252     ctermbg=88      cterm=none
+    hi Normal       ctermfg=s:t_grey82          ctermbg=s:t_grey11           cterm=none
+    hi String       ctermfg=s:t_grey63          ctermbg=none                 cterm=none
+    hi Comment      ctermfg=s:t_lightskyblue1   ctermbg=none                 cterm=none
+    hi Number       ctermfg=s:t_grey82          ctermbg=none                 cterm=none
+    hi Identifier   ctermfg=s:t_grey82          ctermbg=none                 cterm=none
+    hi Statement    ctermfg=s:t_cornsilk1       ctermbg=none                 cterm=none
+    hi PreProc      ctermfg=s:t_grey82          ctermbg=none                 cterm=none
+    hi Type         ctermfg=s:t_grey82          ctermbg=none                 cterm=none
+    hi Error        ctermfg=s:t_salmon1         ctermbg=none                 cterm=none
+    hi Todo         ctermfg=s:t_darkred         ctermbg=s:t_lightskyblue1    cterm=none
+    hi LineNr       ctermfg=s:t_grey82          ctermbg=none                 cterm=none
+    hi WildMenu     ctermfg=s:t_grey0           ctermbg=s:t_lightgoldenrod2  cterm=none
+    hi VertSplit    ctermfg=s:t_grey0           ctermbg=s:t_grey82           cterm=none
+    hi MatchParen   ctermfg=s:t_grey82          ctermbg=s:t_grey0            cterm=none
+    hi SpellRare    ctermfg=s:t_grey82          ctermbg=s:t_darkred          cterm=none
+    hi SpellBad     ctermfg=s:t_grey82          ctermbg=s:t_darkred          cterm=none
 else
-    hi Normal       ctermfg=#d0d0d0    ctermbg=#1c1c1c    cterm=none
-    hi String       ctermfg=#af87af    ctermbg=none       cterm=none
-    hi Comment      ctermfg=#afd7ff    ctermbg=none       cterm=none
-    hi Number       ctermfg=#d0d0d0    ctermbg=none       cterm=none
-    hi Identifier   ctermfg=#d0d0d0    ctermbg=none       cterm=none
-    hi Statement    ctermfg=#ffffd7    ctermbg=none       cterm=none
-    hi PreProc      ctermfg=#d0d0d0    ctermbg=none       cterm=none
-    hi Type         ctermfg=#d0d0d0    ctermbg=none       cterm=none
-    hi Error        ctermfg=#ff875f    ctermbg=none       cterm=none
-    hi Todo         ctermfg=#870000    ctermbg=#afd7ff    cterm=none
-    hi LineNr       ctermfg=#d0d0d0    ctermbg=none       cterm=none
-    hi WildMenu     ctermfg=#000000    ctermbg=#d7d787    cterm=none
-    hi VertSplit    ctermfg=#000000    ctermbg=#d0d0d0    cterm=none
-    hi MatchParen   ctermfg=#d0d0d0    ctermbg=#000000    cterm=none
-    hi SpellRare    ctermfg=#d0d0d0    ctermbg=#870000    cterm=none
-    hi SpellBad     ctermfg=#d0d0d0    ctermbg=#870000    cterm=none
+    hi Normal       ctermfg=s:grey82            ctermbg=s:grey11             cterm=none
+    hi String       ctermfg=s:grey63            ctermbg=none                 cterm=none
+    hi Comment      ctermfg=s:lightskyblue1     ctermbg=none                 cterm=none
+    hi Number       ctermfg=s:grey82            ctermbg=none                 cterm=none
+    hi Identifier   ctermfg=s:grey82            ctermbg=none                 cterm=none
+    hi Statement    ctermfg=s:cornsilk1         ctermbg=none                 cterm=none
+    hi PreProc      ctermfg=s:grey82            ctermbg=none                 cterm=none
+    hi Type         ctermfg=s:grey82            ctermbg=none                 cterm=none
+    hi Error        ctermfg=s:salmon1           ctermbg=none                 cterm=none
+    hi Todo         ctermfg=s:darkred           ctermbg=s:lightskyblue1      cterm=none
+    hi LineNr       ctermfg=s:grey82            ctermbg=none                 cterm=none
+    hi WildMenu     ctermfg=s:grey0             ctermbg=s:lightgoldenrod2    cterm=none
+    hi VertSplit    ctermfg=s:grey0             ctermbg=s:grey82             cterm=none
+    hi MatchParen   ctermfg=s:grey82            ctermbg=s:grey0              cterm=none
+    hi SpellRare    ctermfg=s:grey82            ctermbg=s:darkred            cterm=none
+    hi SpellBad     ctermfg=s:grey82            ctermbg=s:darkred            cterm=none
 endif
