@@ -1,6 +1,8 @@
 # mavi
 A mostly blue, grey, and yellow vim color scheme.
 
+[mavi](https://translate.google.com/#view=home&op=translate&sl=tr&tl=en&text=mavi) is Turkish for blue.
+
 # Screenshots
 
 ## Lisp
